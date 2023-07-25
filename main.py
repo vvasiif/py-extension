@@ -14,7 +14,7 @@ for i in range(4):
     time.sleep(3)   
 
     pyautogui.hotkey('ctrl', 'l')
-    pyautogui.typewrite('www.facebook.com/')
+    pyautogui.typewrite('www.facebook.com/ ')
     pyautogui.press('enter')        
 
     time.sleep(5)
@@ -23,7 +23,7 @@ for i in range(4):
     time.sleep(3)
 
     pyautogui.typewrite('https://www.facebook.com/sophisticatedgracephotography/posts/pfbid0bCrVrS2ndfnVA3nSmD1h56wL1xPW3Ae9gpFk7dfDsUVM3rSURVjtVCyNYcVAWiWQl')
-    time.sleep(5)
+    time.sleep(10)
 
     for _ in range(12):
         time.sleep(0.5)
@@ -37,7 +37,7 @@ for i in range(4):
     pyautogui.typewrite('www.facebook.com/me')
     pyautogui.press('enter') 
 
-    time.sleep(5)
+    time.sleep(5)   
 
     pyautogui.hotkey('ctrl', 'f')
     pyautogui.typewrite('soph')
@@ -46,23 +46,20 @@ for i in range(4):
         time.sleep(0)                           
         pyautogui.press('tab')
 
-    pyautogui.press('enter') 
+    pyautogui.press('enter')    
 
-    for _ in range(3):
+    for _ in range(3):  
         pyautogui.hotkey('shift', 'tab')
 
+    
     pyautogui.press('enter') 
-    pyautogui.press('enter') 
-
-    time.sleep(5)
-
-www.facebook.com/me
-
-    time.sleep(1)
+    # pyautogui.press('enter') 
+    
+    time.sleep(2)
     pyautogui.press('c')
     time.sleep(1)
-
-    for _ in range(10):
+    
+    for _ in range(2):
         alphanumeric = ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(20))
         pyautogui.typewrite(alphanumeric)
         time.sleep(1)
